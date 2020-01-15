@@ -21,7 +21,18 @@ class KnightPathFinder
     end
 
     def find_path(end_pos)
+        end_node = @root_node.dfs(end_pos)
+        trace_path_back(end_node)
+    end
 
+    def trace_path_back(end_node)
+        path = []
+        until end_node == @root_node
+            path.unshift(end_node.value)
+            end_node = end_node.parent
+        end
+        path.unshift(@root_node.value)
+        path
     end
 
     def new_move_postions(pos)
