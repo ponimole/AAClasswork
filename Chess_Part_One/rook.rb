@@ -1,6 +1,7 @@
 require_relative "piece"
 require_relative "slideable"
 class Rook < Piece
+    attr_reader :symbol
     
     def initialize(position, board, color)
         super

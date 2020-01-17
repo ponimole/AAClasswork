@@ -1,6 +1,8 @@
 require_relative "rook"
 require_relative "bishop"
 require_relative "queen"
+require_relative "king"
+require_relative "knight"
 require_relative "piece"
 require "byebug"
 class Board
@@ -13,8 +15,8 @@ class Board
         #         @grid[row_i][col_i] = Piece.new(position, self, :white) if row_i >= @grid.length - 2
         #     end
         # end
-        @grid[0][3] = Piece.new([0,3], self, :black)
-        @grid[4][4] = Queen.new([4,4], self, :black)
+        @grid[3][3] = Piece.new([3,3], self, :white)
+        @grid[0][0] = Knight.new([0,0], self, :black)
     end
 
     def [](pos)
