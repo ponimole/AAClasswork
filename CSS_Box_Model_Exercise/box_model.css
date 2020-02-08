@@ -1,0 +1,45 @@
+#first-div, #second-div, #third-div,.image-1-container {
+  width: 200px;
+  padding: 50px;
+  border: 5px solid black;
+}
+
+#first-div {
+  background-color: #39cccc;
+}
+
+#second-div {
+  background-color: #ff4136;
+  box-sizing: border-box;
+}
+
+p {
+  background-color: #7fdbff;
+}
+
+#third-div {
+  background-color: dimgray;
+  min-height: 10px
+}
+
+.image-1-container {
+  background-color: gold;
+  width: 200px;
+  height: 600px;
+}
+
+.image-1-container img {
+  width: 100%;
+}
+
+.image-2-container {
+  padding: 50px;
+  border: 5px solid black;
+  display: inline-block;
+  background-color: gold;
+  min-width: 200px;
+}
+
+p {
+  background-color: #7fdbff;
+}
